@@ -1,5 +1,5 @@
 #opentsdb cluster load balancer
-Load balancer for an opentsdb cluster based on haproxy, confd and etcd. Haproxy balanced servers are controlled by adding and removing keys to etcd. Haproxy config file is changed and reload on each etcd key change.
+Load balancer for an opentsdb cluster based on haproxy, confd and etcd. Haproxy balanced servers are controlled by adding and removing keys to etcd. The haproxy config file is changed and then the service is reloaded on each etcd key change.
 
 ######Add server to load balancer 
     etcdctl set /opentsdb/servers/node-01 8.8.8.8:4242
