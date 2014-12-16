@@ -1,4 +1,4 @@
-#opentsdb docker container
+#opentsdb cluster load balancer
 Load balancer for an opentsdb cluster based on haproxy, confd and etcd. Haproxy balanced servers are controlled by adding and removing keys to etcd. Haproxy config file is changed and reload on each etcd key change.
 
 ######Add server to load balancer 
