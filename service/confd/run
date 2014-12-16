@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "=> Starting confd ..."
+
+exec 2>&1
+exec /usr/bin/confd -backend etcd -node $ETCD
